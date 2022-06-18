@@ -1,7 +1,7 @@
 // ////////////////////////////////////////////////////////////////
 // // Attempt 1: Brute force method
-// // Time Complexity: n*log(n)*sqrt(n)
-// // Space Complexity: 1
+// // Time Complexity: O(n*log(n)*sqrt(n))
+// // Space Complexity: O(1)
 // ////////////////////////////////////////////////////////////////
 
 // function countCircularPrimes(n) {
@@ -65,8 +65,8 @@
 //////////////////////////////////////////////////////////////////
 // Attempt 2: Modified Sieve of Eratosthenes
 // Idea: A number isn't a circular prime if it is not a prime. Use the sieve for memoization.
-// Time Complexity:
-// Space Complexity:
+// Time Complexity: O(n log log n)*(log(n))*(sqrt(n))*(1/log(n))
+// Space Complexity: O(n)
 //////////////////////////////////////////////////////////////////
 
 function countCircularPrimes(n) {
@@ -78,7 +78,7 @@ function countCircularPrimes(n) {
         // if the number is prime
         if (isPrime[i]) {
             // if the number is a circular prime, increment counter
-            if (checkCircularPrime(i)) {
+            if (checkCircularPrime(i, isPrime)) {
                 counter++;
             }
 
@@ -97,12 +97,16 @@ function countCircularPrimes(n) {
 // checkCircularPrime: O(log(n))*O(sqrt(n)) function checks if all rotations are themselves prime
 // Input: positive integer
 // Output: true if circular prime, false if not circular prime
-function checkCircularPrime(i) {
+function checkCircularPrime(i, isPrime) {
     i = i.toString();
     let numOfdigits = i.length;
     // rotate the digits for length times
     for (let j = 0; j < numOfdigits; j++) {
         i = rotate(i.toString());
+        // An added memoization step to speed up
+        if (!isPrime[i]) {
+            return false;
+        }
         // check if it is a prime number, return false if not prime
         if (!checkPrime(Number(i))) {
             return false;
