@@ -27,5 +27,9 @@ The first three consecutive numbers to have three distinct prime factors are:
 
 Find the first four consecutive integers to have four distinct prime factors each. What is the first of these numbers?
 
+## Instructions
+1. npm install
+2. npm test
+
 
 
