@@ -4,16 +4,9 @@
 // Space Complexity: O(n)
 //////////////////////////////////////////////////////////////////
 
-function main() {
-    let n = 200000; // n is your search space
-    let target = 4; // this is our target number of factors
-
-    console.log(findTarget(n, target));
-}
-
 function findTarget(n, target) {
     let factors = new Array(n).fill(0); // initialize an array of 0s with length n
-    let count = 0; // this is a temp variable to store the
+    let count = 0; // this is a temp variable to store the number of consecutive hits of the target
 
     // loop all numbers from 2 to n
     for (let i = 2; i <= n; i++) {
@@ -44,6 +37,13 @@ function findTarget(n, target) {
         }
     }
     return "The search space need to be increased.";
+}
+
+function main() {
+    let n = 200000; // n is your search space
+    let target = 4; // this is our target number of factors
+
+    console.log(findTarget(n, target));
 }
 
 main();
