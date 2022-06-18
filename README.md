@@ -2,7 +2,7 @@ This repository contains the code for the developer technical challenge for Klay
 
 I have opted to use problem #35 and problem #47 from Project Euler. 
 
-##Problem 35
+## Problem 35
 https://projecteuler.net/problem=35
 The number, 197, is called a circular prime because all rotations of the digits: 197, 971, and 719, are themselves prime.
 
@@ -10,7 +10,7 @@ There are thirteen such primes below 100: 2, 3, 5, 7, 11, 13, 17, 31, 37, 71, 73
 
 How many circular primes are there below one million?
 
-##Problem 47
+## Problem 47
 https://projecteuler.net/problem=47
 The first two consecutive numbers to have two distinct prime factors are:
 
