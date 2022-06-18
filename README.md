@@ -1,4 +1,6 @@
-This repository contains the code for the developer technical challenge for Klaytn. 
+# Klaytn Developer Technical Challenge
+
+This repository contains the code for my solution of the developer technical challenge for Klaytn. 
 
 I have opted to use problem #35 and problem #47 from Project Euler. 
 
