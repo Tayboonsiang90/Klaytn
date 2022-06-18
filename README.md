@@ -4,6 +4,8 @@ This repository contains the code for my solution of the developer technical cha
 
 I have opted to use problem #35 and problem #47 from Project Euler. 
 
+I have opted to use Javascript with Mocha/Chai for testing.
+
 ## Problem 35
 https://projecteuler.net/problem=35
 
