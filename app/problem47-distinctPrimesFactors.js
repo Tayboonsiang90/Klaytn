@@ -8,7 +8,7 @@ function main() {
     let n = 200000; // n is your search space
     let target = 4; // this is our target number of factors
 
-    return findTarget(n, target);
+    console.log(findTarget(n, target));
 }
 
 function findTarget(n, target) {
@@ -46,6 +46,6 @@ function findTarget(n, target) {
     return "The search space need to be increased.";
 }
 
-console.log(main());
+main();
 
 module.exports = { findTarget };
