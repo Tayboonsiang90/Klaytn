@@ -1,2 +1,0 @@
-# Klaytn
-Klaytn Interview
