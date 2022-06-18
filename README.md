@@ -29,7 +29,7 @@ Find the first four consecutive integers to have four distinct prime factors eac
 
 ## Instructions
 0. Fork repository
-1. npm install
+1. npm install (To install the dependencies for Mocha and Chai)
 2. npm test (To run unit tests)
 3. node ./app/problem35-circularPrimes.js (To run the solution for problem 35)
 4. node ./app/problem47-distinctPrimesFactors.js (To run the solution for problem 47)
